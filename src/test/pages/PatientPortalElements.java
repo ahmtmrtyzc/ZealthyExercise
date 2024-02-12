@@ -13,6 +13,12 @@ public class PatientPortalElements {
     @FindBy (xpath = "//*[@id=\"composition-menu\"]/li[1]")
     public WebElement MyProfile;
 
+    @FindBy(xpath = "//*[@id=\"composition-menu\"]/li[2]")
+    public WebElement MyHealth;
+
+    @FindBy (xpath = "//*[@id=\"composition-menu\"]/li[2]")
+    public WebElement MyDocu;
+
     public PatientPortalElements() {
         PageFactory.initElements(driver, this);
     }
